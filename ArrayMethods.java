@@ -12,7 +12,15 @@ public class ArrayMethods{
    }
     //returns the sum of the elements in Row x of ary.
 
-   public static int columnSum(int[][] ary, int x){}
+   public static int columnSum(int[][] ary, int x){
+     int result = 0;
+     for (int i = 0; i < ary.length; i++) {
+       if (ary[i].length > x) {
+         result += ary[i][x];
+       }
+     }
+     return result;
+   }
     //returns the sum of the elements in Column x of ary (careful with rows of different lengths!).
 
    /*
