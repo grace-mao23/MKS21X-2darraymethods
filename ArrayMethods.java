@@ -44,6 +44,18 @@ public class ArrayMethods{
         }
       }
       int[] colSums = new int[longest];
+      for (int i = 0; i < longest; i++) {
+        int sum = 0;
+        for (int x = 0; x < ary.length; x++) {
+          if (ary[x].length < longest) {
+            sum = 0;
+          } else {
+            sum += ary[x][i];
+          }
+        }
+        colSums[i] = sum;
+      }
+      return colSums;
     }
     //Returns an array with the column sum of each column of ary.
     //When a row is not long enough to reach the column count it as a zero. (NO indexOutOfBounds should ever occur)
