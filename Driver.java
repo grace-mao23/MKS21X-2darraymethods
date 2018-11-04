@@ -51,5 +51,11 @@ public class Driver{
     System.out.println("Printing array with all row sums");
     System.out.println("Should print [8, 15, 9, 20, 0, 3]");
     System.out.println(printOut(ArrayMethods.allRowSums(ary)));
+
+    System.out.println();
+
+    System.out.println("Printing array with all column sums");
+    System.out.println("Should print [15, 15, 7, 12, 6]");
+    System.out.println(printOut(ArrayMethods.allColSums(ary)));
   }
 }
