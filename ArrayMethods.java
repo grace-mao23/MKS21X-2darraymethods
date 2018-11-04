@@ -47,8 +47,8 @@ public class ArrayMethods{
       for (int i = 0; i < longest; i++) {
         int sum = 0;
         for (int x = 0; x < ary.length; x++) {
-          if (ary[x].length < longest) {
-            sum = 0;
+          if (ary[x].length < i) {
+            sum += 0;
           } else {
             sum += ary[x][i];
           }
