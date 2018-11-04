@@ -20,5 +20,10 @@ public class Driver{
     System.out.println(ArrayMethods.rowSum(ary, 4));
     System.out.println("Printing sum of sixth row (should be 3)");
     System.out.println(ArrayMethods.rowSum(ary, 5));
+
+    System.out.println();
+
+    System.out.println("Printing sum of first column (should be 15)");
+    System.out.println(ArrayMethods.columnSum(ary,0));
   }
 }
