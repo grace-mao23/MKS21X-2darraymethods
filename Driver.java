@@ -57,5 +57,17 @@ public class Driver{
     System.out.println("Printing array with all column sums");
     System.out.println("Should print [15, 15, 7, 12, 6]");
     System.out.println(printOut(ArrayMethods.allColSums(ary)));
+
+    System.out.println();
+
+    int[][] array = new int[][] {
+      {5, 5, 6, 1, 2},
+      {4, 10, 5},
+      {12, 7},
+      {19}
+    };
+
+    System.out.println("Testing isRowMagic (Should return true)");
+    System.out.println(ArrayMethods.isRowMagic(array));
   }
 }
