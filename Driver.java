@@ -1,5 +1,5 @@
 public class Driver{
-  public String printOut(int[] ary) {
+  public static String printOut(int[] ary) {
     String result = "[";
     for (int i = 0; i < ary.length; i++) {
       result += ary[i];
@@ -50,6 +50,6 @@ public class Driver{
 
     System.out.println("Printing array with all row sums");
     System.out.println("Should print [8, 15, 9, 20, 0, 3]");
-    System.out.println(ArrayMethods.allRowSums(ary));
+    System.out.println(printOut(ArrayMethods.allRowSums(ary)));
   }
 }
