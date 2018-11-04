@@ -1,4 +1,16 @@
 public class Driver{
+  public String printOut(int[] ary) {
+    String result = "[";
+    for (int i = 0; i < ary.length; i++) {
+      result += ary[i];
+      if (i < ary.length - 1) {
+        result += ", ";
+      }
+    }
+    result += "]";
+    return result;
+  }
+
   public static void main(String[] args){
     int[][] ary = new int[][]{
       {5, 1, 2},
@@ -33,5 +45,11 @@ public class Driver{
     System.out.println(ArrayMethods.columnSum(ary,3));
     System.out.println("Printing sum of fifth column (should be 6)");
     System.out.println(ArrayMethods.columnSum(ary,4));
+
+    System.out.println();
+
+    System.out.println("Printing array with all row sums");
+    System.out.println("Should print [8, 15, 9, 20, 0, 3]");
+    System.out.println(ArrayMethods.allRowSums(ary));
   }
 }
