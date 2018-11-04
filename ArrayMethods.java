@@ -45,15 +45,7 @@ public class ArrayMethods{
       }
       int[] colSums = new int[longest];
       for (int i = 0; i < longest; i++) {
-        int sum = 0;
-        for (int x = 0; x < ary.length; x++) {
-          if (ary[x].length < i) {
-            sum += 0;
-          } else {
-            sum += ary[x][i];
-          }
-        }
-        colSums[i] = sum;
+        colSums[i] = columnSum(ary, i);
       }
       return colSums;
     }
