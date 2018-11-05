@@ -81,5 +81,23 @@ public class Driver{
     System.out.println("Testing isRowMagic on completely empty array");
     System.out.println("Should return true");
     System.out.println(ArrayMethods.isRowMagic(empty));
+
+    System.out.println();
+
+    int[][] woo = new int[][] {
+      {1, 2, 3, 4, 5},
+      {2, 7, 9},
+      {},
+      {3, 10, 12, 1},
+      {14, 1, -4, 15, 15}
+    };
+
+    System.out.println("Testing isColumnMagic (should return true)");
+    System.out.println(ArrayMethods.isColumnMagic(woo));
+    System.out.println("Testing isColumnMagic (should return false)");
+    System.out.println(ArrayMethods.isColumnMagic(array));
+    System.out.println("Testing isColumnMagic on completely empty array");
+    System.out.println("Should return true");
+    System.out.println(ArrayMethods.isColumnMagic(empty));
   }
 }
