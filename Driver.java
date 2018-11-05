@@ -69,5 +69,17 @@ public class Driver{
 
     System.out.println("Testing isRowMagic (Should return true)");
     System.out.println(ArrayMethods.isRowMagic(array));
+    System.out.println("Testing isRowMagic (Should return false)");
+    System.out.println(ArrayMethods.isRowMagic(ary));
+
+    int[][] empty = new int[][] {
+      {},
+      {},
+      {}
+    };
+
+    System.out.println("Testing isRowMagic on completely empty array");
+    System.out.println("Should return true");
+    System.out.println(ArrayMethods.isRowMagic(empty));
   }
 }
