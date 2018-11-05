@@ -99,5 +99,17 @@ public class Driver{
     System.out.println("Testing isColumnMagic on completely empty array");
     System.out.println("Should return true");
     System.out.println(ArrayMethods.isColumnMagic(empty));
+
+    System.out.println();
+
+    int[][] boo = new int[][] {
+      {2, 5, 6},
+      {3},
+      {5, 8}
+    };
+
+    System.out.println("Testing out of bounds stuff (should return 0s)");
+    System.out.println(ArrayMethods.rowSum(boo, 10));
+    System.out.println(ArrayMethods.columnSum(boo, 6));
   }
 }
